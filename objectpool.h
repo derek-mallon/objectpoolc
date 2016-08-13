@@ -101,5 +101,9 @@ int OP_##type##_remove(OP_##type* pool,OP_##type##Handle handle){\
     }\
     return 0;\
 }\
-
+void OP_##type##_destroy(OP_##type* pool){\
+    free(pool->alive);\
+    free(pool->objects);\
+    free(pool->handles);\
+}
 #endif
