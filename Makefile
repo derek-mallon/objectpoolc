@@ -1,4 +1,4 @@
 install: 
 	cp objectpool.h /usr/local/include
 remove:
-	rm /usr/include/objectpool.h
+	rm /usr/local/include/objectpool.h
